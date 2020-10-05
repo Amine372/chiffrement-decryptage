@@ -3,10 +3,15 @@ import math
 import binascii
 import hashlib
 clef = 6264522023
+serure = str(clef)
+serure =serure[0]+serure[1]
+serure= int(serure)
 texte = input(str("entre un texte"))
 texte= list(texte.strip())
 Lettres = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 Lettres_binaire =['01100001','01100010','01100011','01100100','01100101','01100110','01100111','01101000','01101001','01101010','01101011','01101100','01101101','01101110','01101111','01110000','01110001','01110010','01110011','01110100','01110101','01110110','01110111','01111000','01111001','01111010','00100000']
+bgh=[]
+vb =0
 for i in range(0,len(texte)):
     if(texte[i]=="a"):
         texte[i] = Lettres_binaire[0]
@@ -64,3 +69,8 @@ for i in range(0,len(texte)):
         texte[i] = Lettres_binaire[26]
     else:
         print("erreur")
+for i in range(0,len(texte)):
+    bgh.append(texte[i])
+    while(vb!=serure):
+        bgh[i] = hashlib.sha224(bgh[i]).hexdigest()
+        
