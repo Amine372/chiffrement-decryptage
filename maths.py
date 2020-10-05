@@ -11,4 +11,9 @@ Tableau_pondere =[]
 for i in range (0,25):
     Tableau_Reference.append(random.randint(1,99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999))
 
-
+for i in range(0,len(texte)):
+    if(texte[i]=="a"):
+        texte[i] = Lettres_binaire[0]
+        elif(texte[i]=="b"):
+        texte[i] = Lettres_binaire[1]
+    
