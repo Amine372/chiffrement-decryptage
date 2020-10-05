@@ -9,6 +9,7 @@ Lettres_binaire =['01100001','01100010','01100011','01100100','01100101','011001
 Tableau_Reference = []
 Tableau_pondere =[]
 textenn=[]
+s=[]
 for i in range (0,25):
     Tableau_Reference.append(random.randint(1,99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999))
 
@@ -70,9 +71,9 @@ for i in range(0,len(texte)):
     else:
         print("erreur")
 for i in range(0,25):
-    inter = texte[i]
-    inter =int(inter)
-    textenn.append(inter)
+    s = len(texte[i])
+    if(s%2 == 0):
+        print("pair")
     
 print(textenn)
     
