@@ -8,4 +8,8 @@ for i in range(0,len(liste_texte)):
     wh = liste_texte[i]
     wh = bin(ord(wh))[2:]
     liste_texte[i] = wh
-print(liste_texte)
+
+for i in range(0,len(liste_texte)):
+    wh = liste_texte[i]
+    wh = bin(ord(wh))[2:]
+    liste_texte[i] = wh
