@@ -1,4 +1,6 @@
 import binascii
 
-c= bin(ord("b"))[2:]
+texte = input(str("entre un texte"))
+texte = bin(ord("b"))[2:]
+c= bin(ord(texte))[2:]
 print(c)
