@@ -15,8 +15,6 @@ liste_texte = list(texte.strip())
 for i in range(0,len(liste_texte)):
     wh = liste_texte[i]
     wh = bin(ord(wh))[2:]
+    wh = sommech(wh)
     liste_texte[i] = wh
-
-for i in range(0,len(liste_texte)):
-    wh = liste_texte[i]
-    wh = list(wh.strip())
+print(liste_texte)
