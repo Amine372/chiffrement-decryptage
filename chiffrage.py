@@ -15,6 +15,7 @@ liste_texte = list(texte.strip())
 for i in range(0,len(liste_texte)):
     wh = liste_texte[i]
     wh = bin(ord(wh))[2:]
-    wh = sommech(wh)
+    wh = sommech(int(wh))
     liste_texte[i] = wh
-print(liste_texte)
+#fin de la partie de préalable permutation
+#on entre dans le chiffrement
