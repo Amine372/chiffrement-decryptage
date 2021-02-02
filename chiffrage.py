@@ -1,11 +1,11 @@
 import binascii
 
 def chiffres(n):
-...     c = []
-...     while n != 0:
-...         c.append(n % 10)
-...         n = n / 10
-...     return c
+    c = []
+    while n != 0:
+        c.append(n % 10)
+        n = n / 10
+        return c
 
 texte = input(str("entre un texte"))
 
@@ -19,3 +19,5 @@ for i in range(0,len(liste_texte)):
 for i in range(0,len(liste_texte)):
     wh = liste_texte[i]
     wh = list(wh.strip())
+
+print(chiffres(6921))
