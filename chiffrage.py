@@ -27,6 +27,8 @@ for i in range(0,len(liste_texte)):
     wh = sommech(int(wh))
     wh = pow(wh,c)%gn
     liste_texte[i] = wh
-print(liste_texte)
 #fin de la partie de préalable permutation
 #on entre dans le chiffrement
+mon_fichier = open("texte_chiffré.txt", "w")
+mon_fichier.write("\n")
+mon_fichier.close()
