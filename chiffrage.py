@@ -7,9 +7,12 @@ def sommech(n):
         # n = n // 10
         r, n = r + n % 10, n // 10
     return r
-p = input(int("Quelle est la clef P ?"))
-q = input(int("Quelle est la clef Q ?"))
-c = input(int("Quelle est la clef C ?"))
+p = input("Quelle est la clef P ?")
+q = input("Quelle est la clef Q ?")
+c = input("Quelle est la clef C ?")
+p = int(p)
+q = int(q)
+c = int(c)
 
 texte = input(str("Entrez un texte"))
 gn = p*q
