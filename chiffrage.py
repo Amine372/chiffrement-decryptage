@@ -29,6 +29,7 @@ for i in range(0,len(liste_texte)):
     liste_texte[i] = wh
 #fin de la partie de préalable permutation
 #on entre dans le chiffrement
+texte = "".join(liste_texte)
 mon_fichier = open("texte_chiffré.txt", "w")
-mon_fichier.write("liste_texte")
+mon_fichier.write(texte)
 mon_fichier.close()
