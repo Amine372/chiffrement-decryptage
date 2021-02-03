@@ -1,4 +1,5 @@
 import binascii
+from upyduino import *
 
 def sommech(n):
     r = 0
@@ -23,6 +24,7 @@ for i in range(0,len(liste_texte)):
     wh = liste_texte[i]
     wh = bin(ord(wh))[2:]
     wh = sommech(int(wh))
+    wh = pow(wh,c)
     liste_texte[i] = wh
 print(liste_texte)
 #fin de la partie de préalable permutation
