@@ -9,6 +9,7 @@ def sommech(n):
     return r
 p = input(int("Quelle est la clef P ?"))
 q = input(int("Quelle est la clef Q ?"))
+c = input(int("Quelle est la clef C ?"))
 
 texte = input(str("Entrez un texte"))
 gn = p*q
@@ -20,5 +21,6 @@ for i in range(0,len(liste_texte)):
     wh = bin(ord(wh))[2:]
     wh = sommech(int(wh))
     liste_texte[i] = wh
+print(liste_texte)
 #fin de la partie de préalable permutation
 #on entre dans le chiffrement
